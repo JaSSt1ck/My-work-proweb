@@ -2,5 +2,34 @@
      :root {
         --body: #151437;
         --color: #fff;
+        --slogan-bg: #7177f1;
+    }
+    .logo__dark {
+        display: inline-block;
+    }
+    .logo__light {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu__link {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .menu__link.button {
+        justify-content: center;
+        max-width: 190px;
+        width: 100%;
+    }
+    .about__content {
+        min-height: auto;
+    }
+}
+
+@media (max-width:576px) {
+    .about__title {
+        line-height: 120%;
+        font-size: 32px;
     }
 }
